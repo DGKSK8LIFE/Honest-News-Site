@@ -9,9 +9,7 @@ func init() {
 	tpl = template.Must(template.ParseGlob("frontend.html"))
 }
 
-var (
-	tpl *template.Template
-)
+var tpl *template.Template
 
 func main() {
 	http.HandleFunc("/", index)
